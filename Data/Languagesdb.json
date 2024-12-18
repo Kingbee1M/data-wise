@@ -1,0 +1,97 @@
+{
+    "languages": {
+        "languageOptions": [
+            "English", "español", "Français", "Yoruba", "中国人", "日本語", "عربي", "Русский", "हिंदी"
+        ],
+        "english": {
+            "navbar": [
+                "Features",
+                "Case Studies",
+                "English",
+                "Support",
+                "Get a demo",
+                "Start your free trial"
+            ]
+        },
+        "spanish": {
+            "navbar": [
+                "Características",
+                "Estudios de caso",
+                "Español",
+                "Apoyo",
+                "Obtenga una demostración",
+                "Comienza tu prueba gratuita"
+            ]
+        },
+        "french": {
+            "navbar": [
+                "Caractéristiques",
+                "Etudes de cas",
+                "Anglais",
+                "Soutien",
+                "Obtenez une démo",
+                "Démarrez votre essai gratuit"
+            ]
+        },
+        "yoruba": {
+            "navbar": [
+                "Awọn ẹya ara ẹrọ",
+                "Iwadi Ọran",
+                "Gẹẹsi",
+                "Atilẹyin",
+                "Gba demo",
+                "Bẹrẹ idanwo ọfẹ rẹ"
+            ]
+        },
+        "chinese": {
+            "navbar": [
+                "特征",
+                "案例研究",
+                "英语",
+                "支持",
+                "获取演示",
+                "开始免费试用"
+            ]
+        },
+        "japanese": {
+            "navbar": [
+                " Tokuchō",
+                "`kēsusutadi",
+                " eigo",
+                "sapōto",
+                "`demo o nyūshu'",
+                "muryō toraiaru o hajimete kudasai"
+            ]
+        },
+        "arabic": {
+            "navbar": [
+                "سمات",
+                "دراسات الحالة",
+                "إنجليزي",
+                "يدعم",
+                "الحصول على العرض التوضيحي",
+                "ابدأ تجربتك المجانية"
+            ]
+        },
+        "russian": {
+            "navbar": [
+                "Функции",
+                "«Кейсы»",
+                "Английский",
+                "Поддерживать",
+                "«Получить демо»",
+                "«Начните бесплатную пробную версию»"
+            ]
+        },
+        "hindi": {
+            "navbar": [
+                "विशेषताएँ",
+                "मामले का अध्ययन",
+                "अंग्रेज़ी",
+                "सहायता",
+                "डेमो प्राप्त करें",
+                "अपना नि: शुल्क परीक्षण शुरू करो"
+            ]
+        }
+    }
+}
