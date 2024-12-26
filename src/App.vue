@@ -5,9 +5,16 @@ import navBar from './components/navBar.vue';
 
 <template>
   <navBar />
+  <div class="holder">
   <RouterView />
+  </div>
 </template>
 
 <style scoped>
-
+.holder{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>

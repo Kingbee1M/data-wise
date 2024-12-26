@@ -55,12 +55,12 @@ import { ref, watch } from 'vue';
             const changeLanguage = (language) => {
                  let values = languageKeys.indexOf(language)
                 displayText.value = diffLanguage[values]
+                console.log(displayText.value);
+                
             }
 
             watch(displayText, () => {
             language.setDisplayText(displayText.value);
-            
-            
             });
 
             const handleVisible = () => {
@@ -102,6 +102,10 @@ import { ref, watch } from 'vue';
         justify-content: center;
         align-items: center;
         font-family: DM Sans;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: white;
     }
     .holder {
         display: flex;
@@ -126,17 +130,8 @@ import { ref, watch } from 'vue';
         display: flex;
         flex-direction: column;
         gap: 20px;
-        margin-top: 30px;
-        max-height: 0;
-        overflow: hidden;
-        opacity: 0;
-        transition:  max-height 0.5s ease-out, opacity 0.5s ease-out;
+        margin-top: 30px
     }
-
-    .drop-down-enter-active, .drop-down-leave-active {
-    max-height: 1000px;
-    opacity: 1;
-}
 
     button {
         border: none;

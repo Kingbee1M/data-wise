@@ -1,11 +1,8 @@
 <template>
-    <div>
-        
-        <div>{{ displayText.Sector1[0] }}</div>
-        <div>{{ displayText.Sector1[1] }}</div>
-        <div>{{ displayText.Sector1[2] }}</div>
-        <div>{{ displayText.Sector1[3] }}</div>
+    <div class="wrapper">
         <LandingComponent />
+        <LandingComponent2 />
+        <Solutions />
     </div>
 </template>
 
@@ -13,6 +10,8 @@
 import { computed } from 'vue';
 import LandingComponent from '../components/LandingComponent.vue'
 import { useLanguages } from '@/stores/LanguageStore';
+import LandingComponent2 from '@/components/LandingComponent2.vue';
+import Solutions from '@/components/Solutions.vue';
 
 const language = useLanguages()
 const displayText = computed(() => language.displayText)
@@ -20,5 +19,13 @@ const displayText = computed(() => language.displayText)
 </script>
 
 <style scoped>
+.wrapper {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 </style>
