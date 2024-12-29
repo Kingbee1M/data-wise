@@ -3,6 +3,10 @@
         <LandingComponent />
         <LandingComponent2 />
         <Solutions />
+        <ImporveComponent />
+        <SuccessComponent />
+        <blogComponent />
+        <FAQComponent />
     </div>
 </template>
 
@@ -12,6 +16,10 @@ import LandingComponent from '../components/LandingComponent.vue'
 import { useLanguages } from '@/stores/LanguageStore';
 import LandingComponent2 from '@/components/LandingComponent2.vue';
 import Solutions from '@/components/Solutions.vue';
+import ImporveComponent from '@/components/ImporveComponent.vue';
+import SuccessComponent from '@/components/SuccessComponent.vue';
+import blogComponent from '@/components/blogComponent.vue';
+import FAQComponent from '@/components/FAQComponent.vue';
 
 const language = useLanguages()
 const displayText = computed(() => language.displayText)
@@ -27,5 +35,6 @@ const displayText = computed(() => language.displayText)
     justify-content: center;
     align-items: center;
 }
+
 
 </style>

@@ -178,24 +178,38 @@ import { ref, watch } from 'vue';
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 40px;
+        gap: 35px;
         margin-top: 30px;
+    }
+
+    .secondLink {
+        width: 100%;
+        font-size: 100%;
+        padding: 15px 3px;
+        border-radius: 15px;
+        border: 1px solid #C1C5BF;
+        text-align: center;
+        background-color: #3A7326;        
     }
 
     .secondLink  a {
         color: white;
-        background-color: #3A7326;
-        padding: 15px 100px;
-        border-radius: 15px;
         text-decoration: none;
+    }
+
+    .thirdLink {
+        width: 100%;
+        font-size: 100%;
+        padding: 15px 3px;
+        border-radius: 15px;
+        border: 1px solid #C1C5BF;
+        text-align: center;
     }
 
     .thirdLink  a {
         color: black;
         text-decoration: none;
-        padding: 15px 70px;
-        border-radius: 15px;
-        border: 1px solid #C1C5BF;
+        /* font-size: 13px; */
     }
 
     select {
