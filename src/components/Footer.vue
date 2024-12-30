@@ -22,9 +22,11 @@
         </div>
         <div class="bottom">
             <div>{{ displayText.footer[3] }}</div>
-            <div>{{ displayText.footer[4] }}</div>
-            <div>{{ displayText.footer[5] }}</div>
-            <div>{{ displayText.footer[6] }}</div>
+            <div>
+                    <div>{{ displayText.footer[4] }}</div>
+                    <div>{{ displayText.footer[5] }}</div>
+                    <div>{{ displayText.footer[6] }}</div>
+            </div>
         </div>
     </div>
 </template>
@@ -74,6 +76,15 @@ const supports = computed(() => language.displayText.footer[2])
     
 }
 
+.top >div:nth-child(1) {
+    width: 100%;
+    height: 70px;
+}
+
+.top >div:nth-child(1) img {
+    width: 50%;
+}
+
 .about {
     display: flex;
     flex-direction: column;
@@ -108,6 +119,30 @@ const supports = computed(() => language.displayText.footer[2])
 
 .support {
     display: none;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-top: 3px solid #C1C5BF;
+    font-size: 10px;
+}
+
+.bottom >div:nth-child(1) {
+    width: 30%;
+    word-wrap: break-word;
+    font-size: 13px;
+}
+
+.bottom >div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
 }
 
 </style>
