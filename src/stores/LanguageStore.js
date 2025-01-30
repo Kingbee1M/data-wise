@@ -1,0 +1,961 @@
+import { defineStore } from "pinia";
+
+export const useLanguages = defineStore('languages', {
+    state: () => ({
+        languageOptions: [
+            "English", "Español", "Français", "Yoruba", "中国人", "日本語", "عربي", "Русский", "हिंदी"
+        ],
+        displayText: {
+            navbar: [
+                "Features",
+                "Case Studies",
+                "English",
+                "Support",
+                "Get a demo",
+                "Start your free trial"
+            ],
+            footer: [
+                ["About", "Company Overview", "Careers", "Press & Media", "Testimonials",],
+                ["Resources", "Blog", "Help Center", "Webinars & Events", "Case Studies",],
+                ["Support & Contact", "Contact Us", "Technical Support", "Feedback", "Community Forum",],
+                "©2023 NIMBUS · All rights reserved.",
+                "Term of use",
+                "Privacy policy",
+                "Security",
+            ],
+            Sector1: [
+                "Unleash the Power of Data",
+                "Step into the future with our state-of-the-art AI solutions. Unleash the potential of machine learning to innovate, optimize, and transform your business processes.",
+                "Start Your Free Trial",
+                "Learn more"
+            ],
+            Sector2: [
+                "Why DataWise?",
+                "We are driven by the vision of transforming businesses with artificial intelligence. Founded in 2024, we have consistently pushed the boundaries of AI to offer smart, scalable, and intuitive solutions that drive growth and efficiency. ",
+                "Our team of expert data scientists, engineers, and strategists combines cutting-edge technology with deep industry knowledge to deliver custom AI solutions that cater to unique business challenges. "
+            ],
+            Sector3: [
+                "Solutions",
+                "Revolutionize Your Business with Our AI-Powered Features",
+                "Advanced Data Analytics",
+                "Predictive analytics to gain actionable insights and forecast future trends.",
+                "Operations with Automation",
+                "Enhance your operational efficiency with our AI-driven automated workflows.",
+                "Unlock Insights with NLP",
+                "Language processing to extract meaningful unstructured data.",
+                "Custom AI for Your Needs",
+                "Collaborate with our team of AI experts to build and deploy bespoke models.",
+                "Explore solutions",
+            ],
+            Sector4: [
+                "Resources",
+                "Improve your Design Data workflow",
+                "AI-Driven Forecasts",
+                "AI-Driven Forecasts",
+                "Connect & Streamline",
+                "Instant Insights",
+                "Unify governance for data, analytics and AI",
+                "Maintain a compliant, end-to-end view of your data estate with a single model of data governance for all your structured and unstructured data. Discover insights rooted.",
+                "Context-aware natural language search and discovery",
+                "Embark on a journey of data-driven decision-making",
+                "Single permission model for data + AI",
+                "Explore",
+                "Request demo",
+            ],
+            Sector5: [
+                "Success Stories",
+                "What Our Clients Say",
+                "This AI platform transformed our data management processes, driving efficiency and innovation across our tech teams. Truly a game-changer in the industry!",
+                "Priya S.",
+                "Lead Business Analyst",
+                "Experience the Future of Business Analytics",
+                "Get hands-on with our advanced AI-driven features and see the difference for yourself. Start your free trial today.",
+                "Context-aware natural language search and discovery",
+                "Embark on a journey of data-driven decision-making",
+                "Single permission model for data + AI",
+                "Get a demo",
+            ],
+            Sector6: [
+                "BLOGS",
+                "In the spotlight",
+                "Stay updated with the latest trends, tips, and insights in business analytics. Explore our curated articles designed to empower your data-driven journey.",
+                [
+                    {title: "Report", image: "src/assets/images/Thumbnail.png", content: "The Rise of AI in Business Analytics: What You Need to Know"},
+                    {title: "News", image: "src/assets/images/news.svg", content: "Customizing Your DataWise Dashboard: A Step-by-Step Guide"},
+                    {title: "Report", image: "src/assets/images/Thumbnail.png", content: "The Rise of AI in Business Analytics: What You Need to Know"},
+                    {title: "News", image: "src/assets/images/news.svg", content: "Customizing Your DataWise Dashboard: A Step-by-Step Guide"},
+                ],
+                "Report",
+                "The Rise of AI in Business Analytics: What You Need to Know",
+                "News",
+                "Customizing Your DataWise Dashboard: A Step-by-Step Guide",
+            ],
+            Sector7: [
+                    "FAQ",
+                    "Frequently asked questions",
+                    "Explore to learn more about how DataWise can empower your business with AI-driven solutions.",
+                    [
+                        {question: "Can DataWise's AI solutions be  business systems?",answer: "Yes, integration is a key strength of our AI solutions. DataWise's AI platform is designed for flexibility and can be integrated with a wide range of existing business systems.",},
+                        {question:  "What types of AI services does DataWise offer?", answer: "Absolutely, our services are scalable and designed to accommodate and process large amounts of data efficiently.",},
+                        {question:"What customer support do you offer for your AI solutions?", answer: "Our services can benefit various industries, including healthcare, finance, retail, entertainment, and many more, wherever AI can be leveraged.",},
+                        {question: "Can your AI help improve my website's conversion rate?", answer: "We pride ourselves on our service's adaptability, user-centric design, and our continual commitment to pushing the boundaries of AI technology.",},
+                        {question: "Can your AI identify areas for A/B testing and personalization?",answer: "We offer a range of support services from online resources, live chat support, to dedicated account representatives for enterprise customers.",},
+                        {question: "How can your AI help improve my website's SEO ranking?",answer: "Yes, our platform allows for custom model training with your proprietary datasets.",},
+                    ]
+                ]
+            
+        },
+        languages: {
+            English: {
+                navbar: [
+                    "Features",
+                    "Case Studies",
+                    "English",
+                    "Support",
+                    "Get a demo",
+                    "Start your free trial"
+                ],
+                footer: [
+                    ["About", "Company Overview", "Careers", "Press & Media", "Testimonials",],
+                    ["Resources", "Blog", "Help Center", "Webinars & Events", "Case Studies",],
+                    ["Support & Contact", "Contact Us", "Technical Support", "Feedback", "Community Forum",],
+                    "©2023 NIMBUS · All rights reserved.",
+                    "Term of use",
+                    "Privacy policy",
+                    "Security",
+                ],
+                Sector1: [
+                    "Unleash the Power of Data",
+                    "Step into the future with our state-of-the-art AI solutions. Unleash the potential of machine learning to innovate, optimize, and transform your business processes.",
+                    "Start Your Free Trial",
+                    "Learn more"
+                ],
+                Sector2: [
+                    "Why DataWise?",
+                    "We are driven by the vision of transforming businesses with artificial intelligence. Founded in 2024, we have consistently pushed the boundaries of AI to offer smart, scalable, and intuitive solutions that drive growth and efficiency.",
+                    "Our team of expert data scientists, engineers, and strategists combines cutting-edge technology with deep industry knowledge to deliver custom AI solutions that cater to unique business challenges. "
+                ],
+                Sector3: [
+                    "Solutions",
+                    "Revolutionize Your Business with Our AI-Powered Features",
+                    "Advanced Data Analytics",
+                    "Predictive analytics to gain actionable insights and forecast future trends.",
+                    "Operations with Automation",
+                    "Enhance your operational efficiency with our AI-driven automated workflows.",
+                    "Unlock Insights with NLP",
+                    "Language processing to extract meaningful unstructured data.",
+                    "Custom AI for Your Needs",
+                    "Collaborate with our team of AI experts to build and deploy bespoke models.",
+                    "Explore solutions",
+                ],
+                Sector4: [
+                    "Resources",
+                    "Improve your Design Data workflow",
+                    "AI-Driven Forecasts",
+                    "AI-Driven Forecasts",
+                    "Connect & Streamline",
+                    "Instant Insights",
+                    "Unify governance for data, analytics and AI",
+                    "Maintain a compliant, end-to-end view of your data estate with a single model of data governance for all your structured and unstructured data. Discover insights rooted.",
+                    "Context-aware natural language search and discovery",
+                    "Embark on a journey of data-driven decision-making",
+                    "Single permission model for data + AI",
+                    "Explore",
+                    "Request demo",
+                ],
+                Sector5: [
+                    "Success Stories",
+                    "What Our Clients Say",
+                    "This AI platform transformed our data management processes, driving efficiency and innovation across our tech teams. Truly a game-changer in the industry!",
+                    "Priya S.",
+                    "Lead Business Analyst",
+                    "Experience the Future of Business Analytics",
+                    "Get hands-on with our advanced AI-driven features and see the difference for yourself. Start your free trial today.",
+                    "Context-aware natural language search and discovery",
+                    "Embark on a journey of data-driven decision-making",
+                    "Single permission model for data + AI",
+                    "Get a demo",
+                ],
+                Sector6: [
+                    "BLOGS",
+                    "In the spotlight",
+                    "Stay updated with the latest trends, tips, and insights in business analytics. Explore our curated articles designed to empower your data-driven journey.",
+                    [
+                        {title: "Report", image: "src/assets/images/Thumbnail.png", content: "The Rise of AI in Business Analytics: What You Need to Know"},
+                        {title: "News", image: "src/assets/images/news.svg", content: "Customizing Your DataWise Dashboard: A Step-by-Step Guide"},
+                        {title: "Report", image: "src/assets/images/Thumbnail.png", content: "The Rise of AI in Business Analytics: What You Need to Know"},
+                        {title: "News", image: "src/assets/images/news.svg", content: "Customizing Your DataWise Dashboard: A Step-by-Step Guide"},
+                    ],
+                ],
+                Sector7: [
+                    "FAQ",
+                    "Frequently asked questions",
+                    "Explore to learn more about how DataWise can empower your business with AI-driven solutions.",
+                    [
+                        {question: "Can DataWise's AI solutions be  business systems?",answer: "Yes, integration is a key strength of our AI solutions. DataWise's AI platform is designed for flexibility and can be integrated with a wide range of existing business systems.",},
+                        {question:  "What types of AI services does DataWise offer?", answer: "Absolutely, our services are scalable and designed to accommodate and process large amounts of data efficiently.",},
+                        {question:"What customer support do you offer for your AI solutions?", answer: "Our services can benefit various industries, including healthcare, finance, retail, entertainment, and many more, wherever AI can be leveraged.",},
+                        {question: "Can your AI help improve my website's conversion rate?", answer: "We pride ourselves on our service's adaptability, user-centric design, and our continual commitment to pushing the boundaries of AI technology.",},
+                        {question: "Can your AI identify areas for A/B testing and personalization?",answer: "We offer a range of support services from online resources, live chat support, to dedicated account representatives for enterprise customers.",},
+                        {question: "How can your AI help improve my website's SEO ranking?",answer: "Yes, our platform allows for custom model training with your proprietary datasets.",},
+                    ]
+                ]
+            },
+            Español: {
+                navbar: [
+                    "Características",
+                    "Estudios de caso",
+                    "Español",
+                    "Apoyo",
+                    "Obtenga una demostración",
+                    "Comienza tu prueba gratuita"
+                ],
+                footer: [
+                    ["Acerca de", "Descripción general de la empresa", "Carreras", "Prensa y medios", "Testimonios",],
+                    ["Recursos", "Blog", "Centro de ayuda", "Seminarios web y eventos", "Estudios de casos",],
+                    ["Soporte y contacto", "Contáctenos", "Soporte técnico", "Comentarios", "Foro de la comunidad",],
+                    "©2023 NIMBUS · Todos los derechos reservados",
+                    "Condiciones de uso",
+                    "Política de privacidad",
+                    "Seguridad",
+                ],
+                Sector1: [
+                    "Libere el poder de los datos",
+                    "Da un paso hacia el futuro con nuestras soluciones de IA de última generación. Libere el potencial del aprendizaje automático para innovar, optimizar y transformar sus procesos comerciales.",
+                    "Comience su prueba gratuita",
+                    "Más información"
+                ],
+                Sector2: [
+                    "¿Por qué DataWise?",
+                    "Nos mueve la visión de transformar las empresas con inteligencia artificial. Fundada en 2024, hemos superado constantemente los límites de la IA para ofrecer soluciones inteligentes, escalables e intuitivas que impulsan el crecimiento y la eficiencia.",
+                    "Nuestro equipo de científicos de datos, ingenieros y estrategas expertos combina tecnología de vanguardia con un profundo conocimiento de la industria para ofrecer soluciones de IA personalizadas que se adaptan a desafíos comerciales únicos."
+                ],
+                Sector3: [
+                    "Soluciones",
+                    "Revolucione su negocio con nuestras funciones impulsadas por IA",
+                    "Análisis de datos avanzados",
+                    "Análisis predictivo para obtener información útil y pronosticar tendencias futuras",
+                    "Operaciones con automatización",
+                    "Mejore su eficiencia operativa con nuestros flujos de trabajo automatizados impulsados ​​por IA",
+                    "Desbloquee información con NLP",
+                    "Procesamiento del lenguaje para extraer datos no estructurados significativos",
+                    "IA personalizada para sus necesidades",
+                    "Colabore con nuestro equipo de expertos en IA para crear e implementar modelos a medida",
+                    "Explorar soluciones",
+                ],
+                Sector4: [
+                    "Recursos",
+                    "Mejore su flujo de trabajo de datos de diseño",
+                    "Previsiones basadas en IA",
+                    "Previsiones basadas en IA",
+                    "Conéctese y agilice",
+                    "Información instantánea",
+                    "Unifique la gobernanza de datos, análisis e IA",
+                    "Mantenga una vista integral y compatible de su patrimonio de datos con un único modelo de gobernanza de datos para todos sus datos estructurados y no estructurados. Descubra información basada en datos",
+                    "Búsqueda y descubrimiento de lenguaje natural con reconocimiento de contexto",
+                    "Embárquese en un viaje de toma de decisiones basada en datos",
+                    "Modelo de permiso único para datos + IA",
+                    "Explorar",
+                    "Solicitar demostración",
+                ],
+                Sector5: [
+                    "Casos de éxito",
+                    "Lo que dicen nuestros clientes",
+                    "Esta plataforma de IA transformó nuestros procesos de gestión de datos, impulsando la eficiencia y la innovación en nuestros equipos de tecnología. ¡Realmente es un punto de inflexión en la industria!",
+                    "Priya S.",
+                    "Analista de negocios líder",
+                    "Experimente el futuro de la analítica empresarial",
+                    "Ponga en práctica nuestras funciones avanzadas impulsadas por IA y vea la diferencia por sí mismo. Comience su prueba gratuita hoy mismo",
+                    "Búsqueda y descubrimiento de lenguaje natural con reconocimiento de contexto",
+                    "Embárquese en un viaje de toma de decisiones basada en datos",
+                    "Modelo de permiso único para datos + IA",
+                    "Obtenga una demostración",
+
+                ],
+                Sector6: [
+                    "Blogs",
+                    "En el punto de mira",
+                    "Manténgase actualizado con las últimas tendencias, consejos y perspectivas en análisis de negocios. Explore nuestros artículos seleccionados diseñados para potenciar su recorrido basado en datos",
+                    [
+                        {title: "Informe", image: "src/assets/images/Thumbnail.png", content: "El auge de la IA en el análisis empresarial: lo que necesita saber"},
+                        {title: "Noticias", image: "src/assets/images/news.svg", content: "Cómo personalizar su panel de control de DataWise: una guía paso a paso"},
+                        {title: "Informe", image: "src/assets/images/Thumbnail.png", content: "El auge de la IA en el análisis empresarial: lo que necesita saber"},
+                        {title: "Noticias", image: "src/assets/images/news.svg", content: "Cómo personalizar su panel de control de DataWise: una guía paso a paso"},
+                    ],
+                ],
+                Sector7: [
+                    "Preguntas frecuentes",
+                    "Preguntas frecuentes",
+                    "Explore para obtener más información sobre cómo DataWise puede potenciar su negocio con soluciones impulsadas por IA",
+                    [
+                        {question: "¿Las soluciones de IA de DataWise pueden ser sistemas empresariales?",answer: "Sí, la integración es una fortaleza clave de nuestras soluciones de IA. La plataforma de IA de DataWise está diseñada para brindar flexibilidad y se puede integrar con una amplia gama de sistemas empresariales existentes",},
+                        {question: "¿Qué tipos de servicios de IA ofrece DataWise?", answer: "Por supuesto, nuestros servicios son escalables y están diseñados para adaptarse y procesar grandes cantidades de datos de manera eficiente",},
+                        {question: "¿Qué soporte al cliente ofrecen para sus soluciones de IA?", answer: "Nuestros servicios pueden beneficiar a diversas industrias, como la atención médica, las finanzas, el comercio minorista, el entretenimiento y muchas más, donde sea que se pueda aprovechar la IA",},
+                        {question: "¿Puede su IA ayudar a mejorar la tasa de conversión de mi sitio web?", answer: "Nos enorgullecemos de la adaptabilidad de nuestro servicio, el diseño centrado en el usuario y nuestro compromiso continuo de superar los límites de la tecnología de IA",},
+                        {question: "¿Puede su IA identificar áreas para pruebas A/B y personalización?", answer: "Ofrecemos una variedad de servicios de soporte, desde recursos en línea y soporte por chat en vivo hasta representantes de cuenta dedicados para clientes empresariales",},
+                        {question: "¿Cómo puede su IA ayudar a mejorar la clasificación SEO de mi sitio web?", answer: "Sí, nuestra plataforma permite el entrenamiento de modelos personalizados con sus conjuntos de datos patentados"},
+                    ]
+                ]
+            },
+            Français: {
+                navbar: [
+                    "Caractéristiques",
+                    "Etudes de cas",
+                    "Anglais",
+                    "Soutien",
+                    "Obtenez une démo",
+                    "Démarrez votre essai gratuit"
+                ],
+                footer: [
+                    ["À propos", "Présentation de l'entreprise", "Carrières", "Presse et médias", "Témoignages",],
+                    ["Ressources", "Blog", "Centre d'aide", "Webinaires et événements", "Études de cas",],
+                    ["Support et contact", "Nous contacter", "Support technique", "Commentaires", "Forum communautaire",],
+                    "©2023 NIMBUS · Tous droits réservés.",
+                    "Conditions d'utilisation",
+                    "Politique de confidentialité",
+                    "Sécurité",
+                ],
+                Sector1: [
+                    "Libérez la puissance des données",
+                    "Entrez dans le futur avec nos solutions d’IA de pointe. Libérez le potentiel du machine learning pour innover, optimiser et transformer vos processus métier.",
+                    "Commencez votre essai gratuit",
+                    "Apprendre encore plus"
+                ],
+                Sector2: [
+                    "Pourquoi DataWise ?",
+                    "Nous sommes animés par la vision de transformer les entreprises grâce à l'intelligence artificielle. Fondée en 2024, nous avons constamment repoussé les limites de l'IA pour offrir des solutions intelligentes, évolutives et intuitives qui stimulent la croissance et l'efficacité.",
+                    "Notre équipe d'experts en data scientists, ingénieurs et stratèges combine une technologie de pointe avec une connaissance approfondie du secteur pour fournir des solutions d'IA personnalisées qui répondent à des défis commerciaux uniques."
+                ],
+                Sector4: [
+                    "Ressources",
+                    "Améliorez votre flux de travail de données de conception",
+                    "Prévisions pilotées par l'IA",
+                    "Prévisions pilotées par l'IA",
+                    "Connectez et rationalisez",
+                    "Informations instantanées",
+                    "Unifiez la gouvernance des données, des analyses et de l'IA",
+                    "Maintenez une vue conforme de bout en bout de votre parc de données avec un modèle unique de gouvernance des données pour toutes vos données structurées et non structurées. Découvrez des informations enracinées.",
+                    "Recherche et découverte en langage naturel sensible au contexte",
+                    "Embarquez pour un voyage de prise de décision basée sur les données",
+                    "Modèle d'autorisation unique pour les données + IA",
+                    "Explorez",
+                    "Demander une démo",
+                ],
+                Sector5: [
+                    "Témoignages de réussite",
+                    "Ce que disent nos clients",
+                    "Cette plateforme d'IA a transformé nos processus de gestion des données, favorisant l'efficacité et l'innovation au sein de nos équipes techniques. Un véritable changement dans le secteur !",
+                    "Priya S.",
+                    "Analyste commerciale principale",
+                    "Découvrez l'avenir de l'analyse commerciale",
+                    "Apprenez à utiliser nos fonctionnalités avancées basées sur l'IA et constatez par vous-même la différence. Commencez votre essai gratuit dès aujourd'hui.",
+                    "Recherche et découverte en langage naturel en fonction du contexte",
+                    "Embarquez pour un voyage de prise de décision basée sur les données",
+                    "Modèle d'autorisation unique pour les données + IA",
+                    "Obtenez une démo",
+                ],
+                Sector6: [
+                    "Blogs",
+                    "À la une",
+                    "Restez informé des dernières tendances, astuces et informations en matière d'analyse commerciale. Explorez nos articles sélectionnés conçus pour dynamiser votre parcours axé sur les données.",
+                    [
+                        {title: "Rapport", image: "src/assets/images/Thumbnail.png", content: "L'essor de l'IA dans l'analyse commerciale : ce que vous devez savoir"},
+                        {title: "Actualités", image: "src/assets/images/news.svg", content: "Personnalisation de votre tableau de bord DataWise : un guide étape par étape"},
+                        {title: "Rapport", image: "src/assets/images/Thumbnail.png", content: "L'essor de l'IA dans l'analyse commerciale : ce que vous devez savoir"},
+                        {title: "Actualités", image: "src/assets/images/news.svg", content: "Personnalisation de votre tableau de bord DataWise : un guide étape par étape"},
+                    ],
+                ],
+                Sector7: [
+                    "FAQ",
+                    "Questions fréquemment posées",
+                    "Découvrez comment DataWise peut donner à votre entreprise les moyens de bénéficier de solutions basées sur l'IA.",
+                    [
+                        {question:"Les solutions d'IA de DataWise peuvent-elles être des systèmes d'entreprise ?", answer: "Oui, l'intégration est un atout clé de nos solutions d'IA. La plateforme d'IA de DataWise est conçue pour la flexibilité et peut être intégrée à une large gamme de systèmes d'entreprise existants.",},
+                        {question:"Quels types de services d'IA DataWise propose-t-il ?", answer: "Absolument, nos services sont évolutifs et conçus pour accueillir et traiter efficacement de grandes quantités de données.",},
+                        {question: "Quel support client proposez-vous pour vos solutions d'IA ?", answer: "Nos services peuvent bénéficier à divers secteurs, notamment la santé, la finance, la vente au détail, le divertissement et bien d'autres, partout où l'IA peut être exploitée.",},
+                        {question: "Votre IA peut-elle aider à améliorer le taux de conversion de mon site Web ?", answer: "Nous sommes fiers de l'adaptabilité de notre service, de sa conception centrée sur l'utilisateur et de notre engagement continu à repousser les limites de la technologie de l'IA.",},
+                        {question: "Votre IA peut-elle identifier les domaines de test A/B et de personnalisation ?", answer: "Nous proposons une gamme de services d'assistance allant des ressources en ligne, de l'assistance par chat en direct aux représentants de compte dédiés aux clients d'entreprise.",},
+                        {question: "Comment votre IA peut-elle aider à améliorer le classement SEO de mon site Web ?", answer: "Oui, notre plateforme permet une formation de modèle personnalisée avec vos ensembles de données propriétaires.",},
+                    ]
+                ]
+            },
+            Yoruba: {
+                navbar: [
+                    "Awọn ẹya ara ẹrọ",
+                    "Iwadi Ọran",
+                    "Gẹẹsi",
+                    "Atilẹyin",
+                    "Gba demo",
+                    "Bẹrẹ idanwo ọfẹ rẹ"
+                ],
+                footer: [
+                ["Nipa", "Akopọ Ile-iṣẹ", "Awọn iṣẹ", "Tẹ & Media", "Awọn ijẹrisi",],
+                ["Awọn orisun", "Bọlọọgi", "Ile-iṣẹ Iranlọwọ", "Webinars & Awọn iṣẹlẹ", "Awọn Ẹkọ ọran",],
+                ["Atilẹyin & Olubasọrọ", "Kan si Wa", "Atilẹyin Imọ-ẹrọ", "Idahun", "Apejọ Agbegbe",],
+                "©2023 NIMBUS · Gbogbo ẹtọ wa ni ipamọ.",
+                "Akoko lilo",
+                " Ilana ipamọ",
+                "Aabo",
+                ],
+                Sector1: [
+                    "Tu Agbara ti Data silẹ",
+                    "Igbesẹ si ọjọ iwaju pẹlu awọn solusan AI ti-ti-aworan wa. Ṣe igbasilẹ agbara ti ẹkọ ẹrọ lati ṣe imotuntun, mu dara, ati yi awọn ilana iṣowo rẹ pada.",
+                    "Bẹrẹ Idanwo Ọfẹ Rẹ",
+                    "Kọ ẹkọ diẹ si"
+                ],
+                Sector2: [
+                    "Kí nìdí DataWise?",
+                    "A n ṣakoso nipasẹ iran ti awọn iṣowo iyipada pẹlu itetisi atọwọda. Ti a da ni 2024, a ti tẹ awọn aala ti AI nigbagbogbo lati funni ni imọran, ti iwọn, ati awọn iṣeduro ti o ni imọran ti o nmu idagbasoke ati ṣiṣe daradara. ",
+                    "Ẹgbẹ wa ti awọn onimọ-jinlẹ data iwé, awọn onimọ-ẹrọ, ati awọn onimọ-jinlẹ darapọ imọ-ẹrọ gige-eti pẹlu imọ ile-iṣẹ jinlẹ lati fi awọn solusan AI aṣa ti o ṣaajo si awọn italaya iṣowo alailẹgbẹ. "
+                ],
+                Sector3: [
+                    "Awọn ojutu",
+                    "Ṣatunṣe Iṣowo Rẹ pẹlu Awọn ẹya Agbara AI Wa",
+                    "Itupalẹ Data To ti ni ilọsiwaju",
+                    "Awọn atupale isọtẹlẹ lati ni awọn oye ṣiṣe ati ṣe asọtẹlẹ awọn aṣa iwaju.",
+                    "Awọn iṣẹ pẹlu Adaṣiṣẹ",
+                    "Ṣe ilọsiwaju ṣiṣe iṣẹ ṣiṣe rẹ pẹlu awọn iṣan-iṣẹ adaṣe adaṣe adaṣe AI wa.",
+                    "Ṣii Awọn oye pẹlu NLP",
+                    "Ṣiṣeto ede lati jade data ti ko ni itumọ ti o ni itumọ.",
+                    "AI Aṣa fun Awọn aini Rẹ",
+                    "Ṣajọpọ pẹlu ẹgbẹ wa ti awọn amoye AI lati kọ ati ran awọn awoṣe bespoke ṣiṣẹ.",
+                    "Ṣawari awọn ojutu",
+                ],
+                Sector4: [
+                    "Awọn orisun",
+                    "Ṣe ilọsiwaju iṣan-iṣẹ Data Oniru rẹ",
+                    "Awọn Asọtẹlẹ AI-Iwakọ",
+                    "Awọn Asọtẹlẹ AI-Iwakọ",
+                    "Sopọ & Sisanwọle",
+                    "Awọn Iwoye Lẹsẹkẹsẹ",
+                    "Ṣe iṣọkan iṣakoso fun data, atupale ati AI",
+                    "Ṣetọju ifaramọ, wiwo ipari-si-opin ti ohun-ini data rẹ pẹlu awoṣe kan ti iṣakoso data fun gbogbo eto rẹ ati data ti a ko ṣeto. Ṣawari awọn oye ti fidimule.",
+                    "Ṣawari ati iṣawari ede adayeba ti o mọ ọrọ-ọrọ",
+                    "Bẹri irin-ajo ti ṣiṣe ipinnu ti o dari data",
+                    "Awoṣe igbanilaaye ẹyọkan fun data + AI",
+                    "Ṣawari",
+                    "Beere demo",
+                ],
+                Sector5: [
+                    "Awọn itan Aṣeyọri",
+                    "Ohun ti Awọn onibara wa Sọ",
+                    "Ipilẹ AI yii ṣe iyipada awọn ilana iṣakoso data wa, ṣiṣe awakọ ati ĭdàsĭlẹ kọja awọn ẹgbẹ imọ-ẹrọ wa. Lootọ ni iyipada-ere ni ile-iṣẹ!",
+                    "Priya S.",
+                    "Oluyanju Iṣowo Asiwaju",
+                    "Ni iriri ojo iwaju ti Awọn atupale Iṣowo",
+                    "Gba ọwọ-lori pẹlu awọn ẹya ara ẹrọ AI ti o ni ilọsiwaju ati ki o wo iyatọ fun ara rẹ. Bẹrẹ idanwo ọfẹ rẹ loni.",
+                    "Ṣawari ati iṣawari ede adayeba ti o mọ ọrọ-ọrọ",
+                    "Bẹri irin-ajo ti ṣiṣe ipinnu ti o dari data",
+                    "Awoṣe igbanilaaye ẹyọkan fun data + AI",
+                    "Gba demo",
+                ],
+                Sector6: [
+                    "Awọn bulọọgi",
+                    "Ninu Ayanlaayo",
+                    "Duro ni imudojuiwọn pẹlu awọn aṣa tuntun, awọn imọran, ati awọn oye ni awọn atupale iṣowo. Ṣewadii awọn nkan ti a ti ṣoki ti a ṣe apẹrẹ lati fun irin-ajo irin-ajo data rẹ ni agbara.",
+                    [
+                        {title: "Iroyin", image: "src/assets/images/Thumbnail.png", content: "Dide ti AI ni Awọn atupale Iṣowo: Ohun ti O Nilo lati Mọ"},
+                        {title: "Iroyin", image: "src/assets/images/news.svg", content: "Ṣiṣatunṣe Dasibodu DataWise Rẹ: Itọsọna Igbesẹ-nipasẹ-Igbese"},
+                        {title: "Iroyin", image: "src/assets/images/Thumbnail.png", content: "Dide ti AI ni Awọn atupale Iṣowo: Ohun ti O Nilo lati Mọ"},
+                        {title: "Iroyin", image: "src/assets/images/news.svg", content: "Ṣiṣatunṣe Dasibodu DataWise Rẹ: Itọsọna Igbesẹ-nipasẹ-Igbese"},
+                    ],
+                ],
+                Sector7: [
+                    "FAQ",
+                    "Awọn ibeere ti a beere nigbagbogbo",
+                    "Ṣawari lati ni imọ siwaju sii nipa bawo ni DataWise ṣe le fun iṣowo rẹ ni agbara pẹlu awọn solusan ti AI-ṣiṣẹ.",
+                    [
+                        {question: "Le DataWise's AI awọn ojutu le jẹ awọn eto iṣowo?", answer: "Bẹẹni, iṣọpọ jẹ agbara bọtini ti awọn iṣeduro AI wa. DataWise's AI Syeed ti a ṣe apẹrẹ fun irọrun ati pe a le ṣepọ pẹlu ọpọlọpọ awọn eto iṣowo ti o wa tẹlẹ. ",},
+                        {question: "Awọn iru awọn iṣẹ AI wo ni DataWise nṣe?", answer: "Nitootọ, awọn iṣẹ wa jẹ iwọn ati ti a ṣe apẹrẹ lati gba ati ṣe ilana awọn oye nla ti data daradara.",},
+                        {question: "Atilẹyin alabara wo ni o funni fun awọn solusan AI rẹ?", answer: "Awọn iṣẹ wa le ni anfani awọn ile-iṣẹ pupọ, pẹlu ilera, iṣuna, soobu, ere idaraya, ati ọpọlọpọ diẹ sii, nibikibi ti AI le ni agbara.",},
+                        {question: "Ṣe AI rẹ le ṣe iranlọwọ lati mu iwọn iyipada oju opo wẹẹbu mi dara si?", answer: "A ni igberaga ara wa lori isọdọtun iṣẹ wa, apẹrẹ-centric olumulo, ati ifaramo igbagbogbo wa lati titari awọn aala ti imọ-ẹrọ AI.",},
+                        {question: "Ṣe AI rẹ le ṣe idanimọ awọn agbegbe fun idanwo A/B ati ti ara ẹni?", answer: "A nfunni ni ọpọlọpọ awọn iṣẹ atilẹyin lati awọn orisun ori ayelujara, atilẹyin iwiregbe laaye, si awọn aṣoju akọọlẹ iyasọtọ fun awọn alabara ile-iṣẹ.",},
+                        {question: "Bawo ni AI rẹ ṣe le ṣe iranlọwọ fun ilọsiwaju SEO aaye ayelujara mi?", answer: "Bẹẹni, Syeed wa ngbanilaaye fun ikẹkọ awoṣe aṣa pẹlu awọn iwe data ohun-ini rẹ.",},
+                    ]
+                ]
+            },
+            中国人: {
+                navbar: [
+                    "特征",
+                    "案例研究",
+                    "英语",
+                    "支持",
+                    "获取演示",
+                    "开始免费试用"
+                ],
+                footer: [
+                    ["关于","公司概况","职业","新闻与媒体","推荐",],
+                    ["资源","博客","帮助中心","网络研讨会与活动","案例研究",],
+                    ["支持与联系","联系我们","技术支持","反馈","社区论坛",],
+                    "©2023 NIMBUS · 保留所有权利。",
+                    "使用条款",
+                    "隐私政策",
+                    "安全",
+                ],
+                Sector1: [
+                    "释放数据的力量",
+                    "借助我们最先进的人工智能解决方案步入未来。释放机器学习的潜力来创新、优化和转变您的业务流程。",
+                    "开始免费试用",
+                    "了解更多"
+                ],
+                Sector2: [
+                    "为什么选择 DataWise?",
+                    "我们致力于通过人工智能改变业务。我们成立于 2024 年,一直不断突破人工智能的界限,提供智能、可扩展且直观的解决方案,推动增长和效率",
+                    "我们的专业数据科学家、工程师和战略家团队将尖端技术与深厚的行业知识相结合,提供满足独特业务挑战的定制人工智能解决方案。"
+                ],
+                Sector3: [
+                    "解决方案",
+                    "利用我们的 AI 功能彻底改变您的业务",
+                    "高级数据分析",
+                    "预测分析可获得可操作的见解并预测未来趋势。",
+                    "自动化运营",
+                    "利用我们的 AI 驱动的自动化工作流程提高您的运营效率。",
+                    "使用 NLP 解锁见解",
+                    "语言处理以提取有意义的非结构化数据。",
+                    "根据您的需求定制 AI",
+                    "与我们的 AI 专家团队合作构建和部署定制模型。",
+                    "探索解决方案",
+                ],
+                Sector4: [
+                    "资源",
+                    "改进您的设计数据工作流程",
+                    "人工智能驱动的预测",
+                    "人工智能驱动的预测",
+                    "连接和简化",
+                    "即时洞察",
+                    "统一数据、分析和人工智能的治理",
+                    "使用适用于所有结构化和非结构化数据的单一数据治理模型,维护合规的端到端数据资产视图。发现根深蒂固的洞察,",
+                    "上下文感知的自然语言搜索和发现",
+                    "踏上数据驱动的决策之旅",
+                    "数据 + 人工智能的单一权限模型",
+                    "探索",
+                    "请求演示",
+                ],
+                Sector5: [
+                    "成功案例",
+                    "客户评价",
+                    "这个 AI 平台改变了我们的数据管理流程,推动了我们技术团队的效率和创新。真正改变了行业的游戏规则！",
+                    "Priya S.",
+                    "首席业务分析师",
+                    "体验业务分析的未来",
+                    "亲身体验我们先进的 AI 驱动功能,亲眼见证差异。立即开始免费试用。",
+                    "上下文感知的自然语言搜索和发现",
+                    "踏上数据驱动的决策之旅",
+                    "数据 + AI 的单一权限模型",
+                    "获取演示",
+                ],
+                Sector6: [
+                    "博客",
+                    "聚焦",
+                    "了解商业分析领域的最新趋势、技巧和见解。浏览我们精心挑选的文章，它们旨在为您的数据驱动之旅助力。",
+                    [
+                        {title: "报告", image: "src/assets/images/Thumbnail.png", content: "人工智能在商业分析中的崛起：您需要了解的内容"},
+                        {title: "新闻", image: "src/assets/images/news.svg", content: "自定义您的 DataWise 仪表板：分步指南"},
+                        {title: "报告", image: "src/assets/images/Thumbnail.png", content: "人工智能在商业分析中的崛起：您需要了解的内容"},
+                        {title: "新闻", image: "src/assets/images/news.svg", content: "自定义您的 DataWise 仪表板：分步指南"},
+                    ],
+                ],
+                Sector7: [
+                    "常见问题解答",
+                    "常见问题",
+                    "探索以了解更多有关 DataWise 如何通过 AI 驱动的解决方案为您的业务提供支持的信息。",
+                    [
+                        {question: "DataWise 的 AI 解决方案可以成为业务系统吗？", answer: "是的，集成是我们 AI 解决方案的主要优势。DataWise 的 AI 平台旨在实现灵活性，可以与各种现有业务系统集成。",},
+                        {question: "DataWise 提供哪些类型的 AI 服务？", answer: "当然，我们的服务具有可扩展性，旨在高效地容纳和处理大量数据。",},
+                        {question: "你们为自己的 AI 解决方案提供哪些客户支持？", answer: "我们的服务可惠及各个行业,包括医疗保健、金融、零售、娱乐等,只要 AI 可用。",},
+                        {question: "你们的 AI 能帮助提高我网站的转化率吗？", answer: "我们以我们服务的适应性、以用户为中心的设计以及不断致力于突破 AI 技术界限而自豪。", },
+                        {question: "你们的 AI 能识别 A/B 测试和个性化的领域吗？", answer: "我们提供一系列支持服务,从在线资源、实时聊天支持到企业客户的专属客户代表。",},
+                        {question: "你们的 AI 如何帮助提高我网站的 SEO 排名？", answer: "是的，我们的平台允许使用你们的专有数据集进行自定义模型训练。",},
+                    ]
+                ]
+            },
+            日本語: {
+                navbar: [
+                    " Tokuchō",
+                    "`kēsusutadi",
+                    " eigo",
+                    "sapōto",
+                    "`demo o nyūshu' ",
+                    "muryō toraiaru o hajimete kudasai"
+                ],
+                footer: [
+                    ["会社概要", "採用情報", "プレス＆メディア", "お客様の声",],
+                    ["リソース", "ブログ", "ヘルプセンター", "ウェビナー＆イベント", "ケーススタディ",],
+                    ["サポート＆お問い合わせ", "お問い合わせ", "テクニカルサポート", "フィードバック", "コミュニティフォーラム",],
+                    "©2023 NIMBUS · 無断転載禁止。",
+                    "利用規約",
+                    "プライバシーポリシー",
+                    "セキュリティ",
+                ],
+                Sector1: [
+                    "データの力を解き放つ",
+                    "当社の最先端の AI ソリューションで未来への一歩を踏み出しましょう。機械学習の可能性を解き放ち、ビジネス プロセスを革新、最適化、変革します。",
+                    "無料トライアルを開始する",
+                    "もっと詳しく知る"
+                ],
+                Sector2: [
+                    "Naze DataWise o erabu no ka?'",
+                    "Tōsha wa, jinkō chinō de bijinesu o henkaku suru to iu bijon ni tsuki ugokasa rete imasu. 2024-Nen ni setsuritsu sa rete irai, tōsha wa AI no genkai o tsuneni oshi hiroge, seichō to kōritsu-sei o sokushin suru sumāto de sukēraburu, katsu chokkan-tekina soryūshon o teikyō shite kimashita.",
+                    "Tōsha no jukuren shita dēta saientisuto, enjinia, sutoratejisuto no chīmu wa, saisentan no tekunorojī to fukai gyōkai chishiki o kumiawasete, dokuji no bijinesu kadai ni taiō suru kasutamu AI soryūshon o teikyō shite imasu."
+                ],
+                Sector3: [
+                    "ソリューション",
+                    "AI を活用した機能でビジネスを変革",
+                    "高度なデータ分析",
+                    "実用的な洞察を得て将来の傾向を予測する予測分析",
+                    "自動化による運用",
+                    "AI 駆動の自動化ワークフローで運用効率を向上",
+                    "NLP で洞察を解き放つ",
+                    "意味のある非構造化データを抽出するための言語処理",
+                    "ニーズに合わせたカスタム AI",
+                    "AI エキスパートのチームと協力して特注モデルを構築および展開",
+                ],
+                Sector4: [
+                    "リソース",
+                    "デザイン データ ワークフローの改善",
+                    "AI 主導の予測",
+                    "AI 主導の予測",
+                    "接続と合理化",
+                    "インスタント インサイト",
+                    "データ、分析、AI のガバナンスの統合",
+                    "すべての構造化データと非構造化データに対する単一のデータ ガバナンス モデルを使用して、データ エステートの準拠したエンドツーエンドのビューを維持します。根付いたインサイトを発見します",
+                    "コンテキスト認識型自然言語検索と検出",
+                    "データ主導の意思決定の旅に乗り出す",
+                    "データ + AI の単一の権限モデル",
+                    "探索",
+                    "デモをリクエスト"
+                ],
+                Sector5: [
+                    "成功事例",
+                    "お客様の声",
+                    "この AI プラットフォームは、当社のデータ管理プロセスを変革し、技術チーム全体の効率と革新を推進しました。まさに業界のゲームチェンジャーです！",
+                    "Priya S.",
+                    "リード ビジネス アナリスト",
+                    "ビジネス分析の未来を体験してください",
+                    "当社の高度な AI 駆動型機能を実際に体験して,違いを実感してください。今すぐ無料トライアルを開始してください。",
+                    "コンテキスト認識型自然言語検索と検出",
+                    "データ駆動型意思決定の旅に乗り出す",
+                    "データ + AI の単一権限モデル",
+                    "デモを入手"
+                ],
+                Sector6: [
+                    "ブログ",
+                    "注目の話題",
+                    "ビジネス分析の最新トレンド,ヒント,洞察を常に把握しましょう。データ主導の旅を強化するために設計された厳選記事をご覧ください。",
+                    [
+                        {title: "レポート", image: "src/assets/images/Thumbnail.png", content: "ビジネス分析における AI の台頭: 知っておくべきこと"},
+                        {title: "ニュース", image: "src/assets/images/news.svg", content: "DataWise ダッシュボードのカスタマイズ: ステップバイステップ ガイド"},
+                        {title: "レポート", image: "src/assets/images/Thumbnail.png", content: "ビジネス分析における AI の台頭: 知っておくべきこと"},
+                        {title: "ニュース", image: "src/assets/images/news.svg", content: "DataWise ダッシュボードのカスタマイズ: ステップバイステップ ガイド"},
+                    ],
+                ],
+                Sector7: [
+                    "FAQ",
+                    "よくある質問",
+                    "DataWise が AI 主導のソリューションでビジネスを強化する方法について詳しくご覧ください。",
+                    [
+                        {question:"DataWise の AI ソリューションはビジネス システムとして使用できますか?", answer: "はい、統合は当社の AI ソリューションの重要な強みです。DataWise の AI プラットフォームは柔軟性を考慮して設計されており、既存のさまざまなビジネス システムと統合できます。",},
+                        {question: "DataWise はどのような種類の AI サービスを提供していますか?",answer: "もちろんです。当社のサービスはスケーラブルで、大量のデータを効率的に処理できるように設計されています。",},
+                        {question: "AI ソリューションにはどのようなカスタマー サポートがありますか?",answer: "当社のサービスは、ヘルスケア、金融、小売、エンターテインメントなど、AI を活用できるあらゆる業界にメリットをもたらします。"},
+                        {question: "AI は、ウェブサイトのコンバージョン率の向上に役立ちますか?", answer: "当社は、サービスの適応性、ユーザー中心の設計、AI テクノロジーの限界を押し広げる継続的な取り組みに誇りを持っています。",},
+                        {question: "AI は、A/B テストとパーソナライゼーションの領域を特定できますか?", answer: "当社は、オンライン リソース、ライブ チャット サポートから、エンタープライズ顧客向けの専任アカウント担当者まで、さまざまなサポート サービスを提供しています。",},
+                        {question: "AI は、ウェブサイトの SEO ランキングの向上にどのように役立ちますか?",answer: "はい、当社のプラットフォームでは、独自のデータセットを使用してカスタム モデル トレーニングを行うことができます。"},
+                    ]
+                ]
+            },
+            عربي: {
+                navbar: [
+                    "سمات",
+                    "دراسات الحالة",
+                    "إنجليزي",
+                    "يدعم",
+                    "الحصول على العرض التوضيحي",
+                    "ابدأ تجربتك المجانية"
+                ],
+                footer: [
+                    ["حول", "نظرة عامة على الشركة", "الوظائف", "الصحافة والإعلام", "شهادات العملاء",],
+                    ["الموارد", "المدونة", "مركز المساعدة", "الندوات عبر الإنترنت والأحداث", "دراسات الحالة",],
+                    ["الدعم والاتصال", "اتصل بنا", "الدعم الفني", "الملاحظات", "منتدى المجتمع",],
+                    
+                    "©2023 NIMBUS · جميع الحقوق محفوظة.",
+                    "شروط الاستخدام",
+                    "سياسة الخصوصية",
+                    "الأمان",
+                ],
+                Sector1: [
+                    "أطلق العنان لقوة البيانات",
+                    "انطلق نحو المستقبل من خلال حلول الذكاء الاصطناعي المتطورة لدينا. أطلق العنان لإمكانات التعلم الآلي لابتكار عمليات عملك وتحسينها وتحويلها.",
+                    "ابدأ تجربتك المجانية",
+                    "يتعلم أكثر"
+                ],
+                Sector2: [
+                    "لماذا DataWise؟",
+                    "نحن مدفوعون برؤية تحويل الأعمال باستخدام الذكاء الاصطناعي. تأسست الشركة في عام 2024، وقد عملنا باستمرار على دفع حدود الذكاء الاصطناعي لتقديم حلول ذكية وقابلة للتطوير وبديهية تعمل على تعزيز النمو والكفاءة.",
+                    "يجمع فريقنا من خبراء علوم البيانات والمهندسين والاستراتيجيين بين التكنولوجيا المتطورة والمعرفة العميقة بالصناعة لتقديم حلول الذكاء الاصطناعي المخصصة التي تلبي تحديات الأعمال الفريدة."
+                ],
+                Sector3: [
+                    "الحلول",
+                    "أحدث ثورة في عملك باستخدام ميزاتنا التي تعمل بالذكاء الاصطناعي",
+                    "تحليلات البيانات المتقدمة",
+                    "التحليلات التنبؤية للحصول على رؤى قابلة للتنفيذ والتنبؤ بالاتجاهات المستقبلية",
+                    "العمليات باستخدام الأتمتة",
+                    "عزز كفاءتك التشغيلية باستخدام سير العمل الآلية التي تعمل بالذكاء الاصطناعي",
+                    "اكتشف الرؤى باستخدام معالجة اللغة الطبيعية",
+                    "معالجة اللغة لاستخراج بيانات غير منظمة وذات مغزى",
+                    "ذكاء اصطناعي مخصص لاحتياجاتك",
+                    "تعاون مع فريق خبراء الذكاء الاصطناعي لدينا لبناء ونشر نماذج مخصصة",
+                    "استكشف الحلول",
+                ],
+                Sector4: [
+                "الموارد",
+                "تحسين سير عمل بيانات التصميم",
+                "التنبؤات التي تعتمد على الذكاء الاصطناعي",
+                "التنبؤات التي تعتمد على الذكاء الاصطناعي",
+                "التوصيل والتبسيط",
+                "الرؤى الفورية",
+                "توحيد الحوكمة للبيانات والتحليلات والذكاء الاصطناعي",
+                "الحفاظ على عرض متوافق وشامل لحوزة البيانات الخاصة بك باستخدام نموذج واحد لحوكمة البيانات لجميع بياناتك المنظمة وغير المنظمة. اكتشف الرؤى المتجذرة",
+                "البحث والاكتشاف باللغة الطبيعية المدرك للسياق",
+                "انطلق في رحلة اتخاذ القرار المستند إلى البيانات",
+                "نموذج إذن واحد للبيانات + الذكاء الاصطناعي",
+                "استكشاف",
+                "طلب عرض توضيحي",
+                ],
+                Sector5: [
+                    "قصص النجاح",
+                    "ما يقوله عملاؤنا",
+                    "لقد غيرت منصة الذكاء الاصطناعي هذه عمليات إدارة البيانات لدينا, مما أدى إلى زيادة الكفاءة والابتكار عبر فرقنا التقنية. إنها حقًا نقطة تحول في الصناعة!",
+                    "بريا س",
+                    "محلل أعمال رائد",
+                    "جرب مستقبل تحليلات الأعمال",
+                    "احصل على تجربة عملية مع ميزاتنا المتقدمة التي تعتمد على الذكاء الاصطناعي وشاهد الفرق بنفسك. ابدأ تجربتك المجانية اليوم",
+                    "البحث والاكتشاف باللغة الطبيعية مع مراعاة السياق",
+                    "انطلق في رحلة اتخاذ القرار المستند إلى البيانات",
+                    "نموذج إذن واحد للبيانات + الذكاء الاصطناعي",
+                    "احصل على عرض توضيحي",
+                ],
+                Sector6: [
+                    "المدونات",
+                    "في دائرة الضوء",
+                    "ابق على اطلاع بأحدث الاتجاهات والنصائح والرؤى في تحليلات الأعمال. استكشف مقالاتنا المنسقة والمصممة لتمكين رحلتك القائمة على البيانات",
+                    [
+                        {title: "تقرير", image: "src/assets/images/Thumbnail.png", content: "صعود الذكاء الاصطناعي في تحليلات الأعمال: ما تحتاج إلى معرفته"},
+                        {title: "الأخبار", image: "src/assets/images/news.svg", content: "تخصيص لوحة معلومات DataWise: دليل خطوة بخطوة"},
+                        {title: "تقرير", image: "src/assets/images/Thumbnail.png", content: "صعود الذكاء الاصطناعي في تحليلات الأعمال: ما تحتاج إلى معرفته"},
+                        {title: "الأخبار", image: "src/assets/images/news.svg", content: "تخصيص لوحة معلومات DataWise: دليل خطوة بخطوة"},
+                    ],
+                ],
+                Sector7: [
+                    "الأسئلة الشائعة",
+                    "الأسئلة الشائعة",
+                    "استكشف لمعرفة المزيد حول كيفية تمكين DataWise لشركتك من خلال حلول تعتمد على الذكاء الاصطناعي",
+                    [
+                        {question: "هل يمكن أن تكون حلول الذكاء الاصطناعي من DataWise أنظمة أعمال؟", answer: "نعم، التكامل هو أحد نقاط القوة الرئيسية لحلول الذكاء الاصطناعي لدينا. تم تصميم منصة الذكاء الاصطناعي من DataWise لتكون مرنة ويمكن دمجها مع مجموعة واسعة من أنظمة الأعمال الحالية",},
+                        {question: "ما أنواع خدمات الذكاء الاصطناعي التي تقدمها DataWise؟", answer: "بالتأكيد، خدماتنا قابلة للتطوير ومصممة لاستيعاب ومعالجة كميات كبيرة من البيانات بكفاءة",},
+                        {question: "ما هي خدمات دعم العملاء التي تقدمها لحلول الذكاء الاصطناعي؟",answer: "يمكن أن تفيد خدماتنا العديد من الصناعات، بما في ذلك الرعاية الصحية، والتمويل، وتجارة التجزئة، والترفيه، وغير ذلك الكثير، حيثما يمكن الاستفادة من الذكاء الاصطناعي.",},
+                        {question:  "هل يمكن للذكاء الاصطناعي الخاص بك أن يساعد في تحسين معدل التحويل لموقعي على الويب؟",answer:  "نحن نفخر بقدرة خدمتنا على التكيف، وتصميمنا الذي يركز على المستخدم، والتزامنا المستمر بدفع حدود تكنولوجيا الذكاء الاصطناعي.",},
+                        {question: "هل يمكن للذكاء الاصطناعي الخاص بك تحديد مجالات اختبار A/B والتخصيص؟",answer: "نحن نقدم مجموعة من خدمات الدعم من الموارد عبر الإنترنت، ودعم الدردشة المباشرة، إلى ممثلي الحسابات المخصصين لعملاء المؤسسات.",},
+                        {question: "كيف يمكن للذكاء الاصطناعي الخاص بك أن يساعد في تحسين ترتيب محرك البحث لموقعي على الويب؟",answer:  "نعم، تسمح منصتنا بتدريب نموذج مخصص باستخدام مجموعات البيانات الخاصة بك.",},
+                    ]
+                ]
+            },
+            Русский: {
+                navbar: [
+                    "Функции",
+                    "«Кейсы»",
+                    "Английский",
+                    "Поддерживать",
+                    "«Получить демо»",
+                    "«Начните бесплатную пробную версию»"
+                ],
+                footer: [
+                    ["О компании", "Обзор компании", "Карьера", "Пресса и СМИ", "Отзывы",],
+                    ["Ресурсы", "Блог", "Справочный центр", "Вебинары и мероприятия", "Исследования случаев",],
+                    ["Поддержка и контакты", "Связаться с нами", "Техническая поддержка", "Обратная связь", "Форум сообщества",],
+                    "©2023 NIMBUS · Все права защищены.",
+                    "Условия использования",
+                    "Политика конфиденциальности",
+                    "Безопасность",
+                ],
+                Sector1: [
+                    "Раскройте потенциал данных",
+                    "Шагните в будущее с нашими современными решениями в области искусственного интеллекта. Раскройте потенциал машинного обучения для инноваций, оптимизации и преобразования ваших бизнес-процессов.",
+                    "Начните бесплатную пробную версию",
+                    "Узнать больше"
+                ],
+                Sector2: [
+                    "Почему DataWise?",
+                    "Мы движимы видением трансформации бизнеса с помощью искусственного интеллекта. Основанные в 2024 году, мы последовательно расширяем границы ИИ, предлагая умные, масштабируемые и интуитивно понятные решения, которые стимулируют рост и эффективность",
+                    "Наша команда экспертов в области данных, инженеров и стратегов объединяет передовые технологии с глубокими отраслевыми знаниями для предоставления индивидуальных решений на основе ИИ, которые отвечают уникальным бизнес-задачам"
+                ],
+                Sector3: [
+                    "Решения",
+                    "Измените свой бизнес с помощью наших функций на основе ИИ",
+                    "Расширенная аналитика данных",
+                    "Прогностическая аналитика для получения действенных идей и прогнозирования будущих тенденций",
+                    "Операции с автоматизацией",
+                    "Повысьте эффективность своей работы с помощью наших автоматизированных рабочих процессов на основе ИИ",
+                    "Откройте для себя идеи с помощью обработки естественного языка",
+                    "Обработка языка для извлечения значимых неструктурированных данных»",
+                    "Пользовательский ИИ для ваших нужд",
+                    "Сотрудничайте с нашей командой экспертов по ИИ для создания и развертывания индивидуальных моделей",
+                    "Изучите решения",
+                ],
+                Sector4: [
+                    "Ресурсы",
+                    "Улучшите рабочий процесс проектирования данных",
+                    "Прогнозы на основе ИИ",
+                    "Прогнозы на основе ИИ",
+                    "Подключение и оптимизация",
+                    "Мгновенные аналитические данные",
+                    "Унифицированное управление данными, аналитикой и ИИ",
+                    "Поддерживайте согласованное, сквозное представление вашего хранилища данных с помощью единой модели управления данными для всех ваших структурированных и неструктурированных данных. Откройте для себя укорененные аналитические данные",
+                    "Контекстно-зависимый поиск и обнаружение на естественном языке",
+                    "Отправьтесь в путешествие по принятию решений на основе данных",
+                    "Единая модель разрешений для данных + ИИ",
+                    "Изучить",
+                    "Запросить демонстрацию",
+                ],
+                Sector5: [
+                    "Истории успеха",
+                    "Что говорят наши клиенты",
+                    "Эта платформа ИИ преобразила наши процессы управления данными, повысив эффективность и инновации в наших технических командах. Действительно меняет правила игры в отрасли!",
+                    "Прия С.",
+                    "Ведущий бизнес-аналитик",
+                    "Ощутите будущее бизнес-аналитики",
+                    "Попробуйте наши передовые функции на основе ИИ и сами почувствуйте разницу. Начните бесплатную пробную версию сегодня",
+                    "Контекстно-зависимый поиск и обнаружение естественного языка",
+                    "Отправьтесь в путешествие по принятию решений на основе данных",
+                    "Единая модель разрешений для данных + ИИ",
+                    "Получить демоверсию",
+                ],
+                Sector6: [
+                    "Блоги",
+                    "В центре внимания",
+                    "Будьте в курсе последних тенденций, советов и идей в области бизнес-аналитики. Изучите наши тщательно отобранные статьи, призванные расширить ваши возможности в области данных",
+                    [
+                        {title: "Отчет", image: "src/assets/images/Thumbnail.png", content: "Расцвет ИИ в бизнес-аналитике: что вам нужно знать"},
+                        {title: "Новости", image: "src/assets/images/news.svg", content: "Настройка панели инструментов DataWise: пошаговое руководство"},
+                        {title: "Отчет", image: "src/assets/images/Thumbnail.png", content: "Расцвет ИИ в бизнес-аналитике: что вам нужно знать"},
+                        {title: "Новости", image: "src/assets/images/news.svg", content: "Настройка панели инструментов DataWise: пошаговое руководство"},
+                    ],
+                ],
+                Sector7: [
+                    "FAQ",
+                    "Часто задаваемые вопросы",
+                    "Изучите, чтобы узнать больше о том, как DataWise может расширить возможности вашего бизнеса с помощью решений на основе ИИ",
+                    [
+                        {question: "Могут ли решения ИИ DataWise быть бизнес-системами?",answer: "Да, интеграция является ключевым преимуществом наших решений ИИ. Платформа ИИ DataWise разработана для гибкости и может быть интегрирована с широким спектром существующих бизнес-систем",},
+                        {question: "Какие типы услуг ИИ предлагает DataWise?",answer: "Безусловно, наши услуги масштабируемы и предназначены для эффективного размещения и обработки больших объемов данных",},
+                        {question: "Какую поддержку клиентов вы предлагаете для своих решений искусственного интеллекта?",answer: "Наши услуги могут принести пользу различным отраслям, включая здравоохранение, финансы, розничную торговлю, развлечения и многие другие, везде, где можно использовать ИИ"},
+                        {question: "Может ли ваш ИИ помочь улучшить коэффициент конверсии моего сайта?",answer: "Мы гордимся адаптивностью нашего сервиса, ориентированным на пользователя дизайном и нашим постоянным стремлением расширять границы технологий искусственного интеллекта",},
+                        {question: "Может ли ваш ИИ определить области для A/B-тестирования и персонализации?", answer: "Мы предлагаем широкий спектр услуг поддержки: от онлайн-ресурсов, поддержки в чате до специальных представителей для корпоративных клиентов",},
+                        {question: "Как ваш ИИ может помочь улучшить SEO-рейтинг моего сайта?",answer:  "Да, наша платформа позволяет обучать индивидуальные модели с использованием ваших собственных наборов данных.",},
+                    ] 
+                ]
+            },
+            हिंदी: {
+                navbar: [
+                    "विशेषताएँ",
+                    "मामले का अध्ययन",
+                    "अंग्रेज़ी",
+                    "सहायता",
+                    "डेमो प्राप्त करें",
+                    "अपना नि: शुल्क परीक्षण शुरू करो"
+                ],
+                footer: [
+                    ["हमारे बारे में", "कंपनी अवलोकन", "करियर", "प्रेस और मीडिया", "प्रशंसापत्र",],
+                    ["संसाधन", "ब्लॉग", "सहायता केंद्र", "वेबिनार और कार्यक्रम", "केस स्टडीज़",],
+                    ["सहायता और संपर्क", "हमसे संपर्क करें", "तकनीकी सहायता", "प्रतिक्रिया", "सामुदायिक मंच",],
+                    "©2023 NIMBUS · सभी अधिकार सुरक्षित हैं।",
+                    "उपयोग की शर्तें",
+                    "गोपनीयता नीति",
+                    "सुरक्षा",
+                ],
+                Sector1: [
+                    "डेटा की शक्ति को उजागर करें",
+                    "हमारे अत्याधुनिक एआई समाधानों के साथ भविष्य में कदम रखें। अपनी व्यावसायिक प्रक्रियाओं को नया करने, अनुकूलित करने और बदलने के लिए मशीन लर्निंग की क्षमता का उपयोग करें।",
+                    "अपना नि: शुल्क परीक्षण शुरू करो",
+                    "और अधिक जानें"
+                ],
+                Sector2: [
+                    "डेटावाइज़ क्यों?",
+
+                    "हम आर्टिफिशियल इंटेलिजेंस के साथ व्यवसायों को बदलने की दृष्टि से प्रेरित हैं। 2024 में स्थापित, हमने लगातार AI की सीमाओं को आगे बढ़ाया है ताकि स्मार्ट, स्केलेबल और सहज समाधान पेश किए जा सकें जो विकास और दक्षता को बढ़ावा देते हैं।",
+
+                    "विशेषज्ञ डेटा वैज्ञानिकों, इंजीनियरों और रणनीतिकारों की हमारी टीम अत्याधुनिक तकनीक को गहन उद्योग ज्ञान के साथ जोड़ती है ताकि कस्टम AI समाधान प्रदान किए जा सकें जो अद्वितीय व्यावसायिक चुनौतियों को पूरा करते हैं।"
+                ],
+                Sector3: [
+                    "समाधान",
+                    "हमारे AI-संचालित सुविधाओं के साथ अपने व्यवसाय में क्रांति लाएँ",
+                    "उन्नत डेटा एनालिटिक्स",
+                    "कार्रवाई योग्य जानकारी प्राप्त करने और भविष्य के रुझानों का पूर्वानुमान लगाने के लिए पूर्वानुमानित विश्लेषण।",
+                    "स्वचालन के साथ संचालन",
+                    "हमारे AI-संचालित स्वचालित वर्कफ़्लो के साथ अपनी परिचालन दक्षता बढ़ाएँ।",
+                    "NLP के साथ जानकारी अनलॉक करें",
+                    "अर्थपूर्ण असंरचित डेटा निकालने के लिए भाषा प्रसंस्करण।",
+                    "आपकी ज़रूरतों के लिए कस्टम AI",
+                    "बेस्पोक मॉडल बनाने और तैनात करने के लिए AI विशेषज्ञों की हमारी टीम के साथ सहयोग करें।",
+                    "समाधानों का पता लगाएँ",
+                ],
+                Sector4: [
+                    "संसाधन",
+                    "अपने डिज़ाइन डेटा वर्कफ़्लो में सुधार करें",
+                    "AI-संचालित पूर्वानुमान",
+                    "AI-संचालित पूर्वानुमान",
+                    "कनेक्ट और स्ट्रीमलाइन",
+                    "त्वरित अंतर्दृष्टि",
+                    "डेटा, एनालिटिक्स और AI के लिए गवर्नेंस को एकीकृत करें",
+                    "अपने सभी संरचित और असंरचित डेटा के लिए डेटा गवर्नेंस के एकल मॉडल के साथ अपने डेटा एस्टेट का एक अनुपालन, एंड-टू-एंड दृश्य बनाए रखें। निहित अंतर्दृष्टि की खोज करें।",
+                    "संदर्भ-जागरूक प्राकृतिक भाषा खोज और खोज",
+                    "डेटा-संचालित निर्णय लेने की यात्रा पर लगना",
+                    "डेटा + AI के लिए एकल अनुमति मॉडल",
+                    "अन्वेषण करें",
+                    "डेमो का अनुरोध करें",
+                ],
+                Sector5: [
+                    "सफलता की कहानियाँ",
+                    "हमारे ग्राहक क्या कहते हैं",
+                    "इस AI प्लेटफ़ॉर्म ने हमारी डेटा प्रबंधन प्रक्रियाओं को बदल दिया, जिससे हमारी तकनीकी टीमों में दक्षता और नवाचार को बढ़ावा मिला। वास्तव में यह उद्योग में एक गेम-चेंजर है!",
+                    "प्रिया एस.",
+                    "लीड बिज़नेस एनालिस्ट",
+                    "बिज़नेस एनालिटिक्स के भविष्य का अनुभव करें",
+                    "हमारी उन्नत AI-संचालित सुविधाओं का अनुभव करें और खुद ही अंतर देखें। आज ही अपना निःशुल्क परीक्षण शुरू करें।",
+                    "संदर्भ-जागरूक प्राकृतिक भाषा खोज और खोज",
+                    "डेटा-संचालित निर्णय लेने की यात्रा पर निकलें",
+                    "डेटा + AI के लिए एकल अनुमति मॉडल",
+                    "डेमो प्राप्त करें",
+                ],
+                Sector6: [
+                    "ब्लॉग",
+                    "स्पॉटलाइट में",
+                    "बिजनेस एनालिटिक्स में नवीनतम रुझानों, युक्तियों और अंतर्दृष्टि के साथ अपडेट रहें। अपने डेटा-संचालित सफर को सशक्त बनाने के लिए डिज़ाइन किए गए हमारे क्यूरेटेड लेखों का अन्वेषण करें।",
+                    [
+                        {title: "रिपोर्ट", image: "src/assets/images/Thumbnail.png", content: "बिजनेस एनालिटिक्स में एआई का उदय: आपको क्या जानना चाहिए"},
+                        {title: "समाचार", image: "src/assets/images/news.svg", content: "अपने डेटावाइज डैशबोर्ड को कस्टमाइज़ करना: एक चरण-दर-चरण मार्गदर्शिका"},
+                        {title: "रिपोर्ट", image: "src/assets/images/Thumbnail.png", content: "बिजनेस एनालिटिक्स में एआई का उदय: आपको क्या जानना चाहिए"},
+                        {title: "समाचार", image: "src/assets/images/news.svg", content: "अपने डेटावाइज डैशबोर्ड को कस्टमाइज़ करना: एक चरण-दर-चरण मार्गदर्शिका"},
+                    ],
+                ],
+                Sector7: [
+                    "अक्सर पूछे जाने वाले प्रश्न",
+                    "अक्सर पूछे जाने वाले प्रश्नों",
+                    "डेटावाइज एआई-संचालित समाधानों के साथ आपके व्यवसाय को कैसे सशक्त बना सकता है, इसके बारे में अधिक जानने के लिए अन्वेषण करें।",
+                    [
+                        {question: "क्या डेटावाइज के एआई समाधान बिजनेस सिस्टम हो सकते हैं?", answer: "हां, एकीकरण हमारे एआई समाधानों की एक प्रमुख ताकत है। डेटावाइज़ का एआई प्लेटफ़ॉर्म लचीलेपन के लिए डिज़ाइन किया गया है और इसे मौजूदा व्यावसायिक प्रणालियों की एक विस्तृत श्रृंखला के साथ एकीकृत किया जा सकता है।"},
+                        {question: "डेटावाइज किस प्रकार की AI सेवाएँ प्रदान करता है?", answer: "बिल्कुल, हमारी सेवाएँ स्केलेबल हैं और बड़ी मात्रा में डेटा को कुशलतापूर्वक समायोजित और संसाधित करने के लिए डिज़ाइन की गई हैं।"},
+                        {question: "आप अपने AI समाधानों के लिए किस ग्राहक सहायता की पेशकश करते हैं?", answer: "हमारी सेवाएं विभिन्न उद्योगों को लाभ पहुंचा सकती हैं, जिनमें स्वास्थ्य सेवा, वित्त, खुदरा, मनोरंजन और कई अन्य शामिल हैं, जहां भी एआई का लाभ उठाया जा सकता है।"},
+                        {question: "क्या आपका AI मेरी वेबसाइट की रूपांतरण दर को बेहतर बनाने में मदद कर सकता है?", answer: "हमें अपनी सेवा की अनुकूलनशीलता, उपयोगकर्ता-केंद्रित डिज़ाइन और एआई प्रौद्योगिकी की सीमाओं को आगे बढ़ाने के लिए हमारी निरंतर प्रतिबद्धता पर गर्व है।"},
+                        {question: "क्या आपका AI ए/बी परीक्षण और वैयक्तिकरण के क्षेत्रों की पहचान कर सकता है?", answer: "हम ऑनलाइन संसाधनों, लाइव चैट समर्थन से लेकर एंटरप्राइज़ ग्राहकों के लिए समर्पित खाता प्रतिनिधियों तक कई प्रकार की सहायता सेवाएँ प्रदान करते हैं।"},
+                        {question: "आपका AI मेरी वेबसाइट की SEO रैंकिंग को बेहतर बनाने में कैसे मदद कर सकता है?", answer: "हां, हमारा प्लेटफ़ॉर्म आपके मालिकाना डेटासेट के साथ कस्टम मॉडल प्रशिक्षण की अनुमति देता है।"},
+                    ]
+                ]
+            }
+        }
+    }),
+actions: {
+        setDisplayText(newDisplayText) {
+            this.displayText = newDisplayText;
+        }
+    }
+});
