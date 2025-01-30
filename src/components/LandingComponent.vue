@@ -4,8 +4,8 @@
         <div class="second">{{ displayText.Sector1[1] }}</div>
         <div class="third"><RouterLink >{{ displayText.Sector1[2] }}</RouterLink></div>
         <div class="forth"><RouterLink >{{ displayText.Sector1[3] }}</RouterLink></div>
-        <div class="imgHolder"><img src="@/assets/images/Image wrapper.svg" alt="heros"></div>
-        <div class="partner"><img src="@/assets/images/logo.svg" alt="partners"></div>
+        <div class="imgHolder"><img src="../assets/images/Image wrapper.svg" alt="heros"></div>
+        <div class="partner"><img src="../assets/images/logo.svg" alt="partners"></div>
     </div>
 </template>
 
